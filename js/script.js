@@ -13,4 +13,7 @@ function calc(operator) {
     }
 
     document.getElementById("output").value = output;
+
+    var newHistory = "<div>" + num1 + " " + operator + " " + num2 + " = " + output + "</div>";
+    document.getElementById("history").innerHTML = newHistory + document.getElementById("history").innerHTML;
 }
