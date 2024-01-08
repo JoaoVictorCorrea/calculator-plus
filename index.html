@@ -10,7 +10,10 @@
     <div class="container">
         <div class="calculator">
             <object data="assets/calculate_48.svg" type="image/svg+xml"></object>
-            <h1>Calculadora</h1>
+            
+            <div class="calculator-title">
+                Calculadora
+            </div>
 
             <input id="num1" type="number"/>
             <input id="num2" type="number"/>
@@ -24,8 +27,16 @@
 
             <input id="output" readonly/>
         </div>
-        <div id="history" class="history">
-            
+        <div class="history">
+            <div class="history-title">
+                <h1>Histórico:</h1>
+            </div>
+            <div class="last-operations">
+                <small>10 últimas operações:</small>
+                <div id="history">
+
+                </div>
+            </div>
         </div>
     </div>
 
